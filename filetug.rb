@@ -5,13 +5,13 @@
 class Filetug < Formula
   desc "FileTug – modern CLI file browser/picker with neat UI"
   homepage "https://github.com/datatug/filetug"
-  version "0.0.18"
+  version "0.0.21"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/datatug/filetug/releases/download/v0.0.18/filetug_0.0.18_darwin_amd64.tar.gz"
-      sha256 "0b6bc1d914dc189c466e08a2d6177af2e71da2b23f687d4e9f7665e9aab971d8"
+      url "https://github.com/datatug/filetug/releases/download/v0.0.21/filetug_0.0.21_darwin_amd64.tar.gz"
+      sha256 "f2ae48706d0ddde639e2eec6c6dd0229525a15d576d57c8eb180c61386072027"
 
       def install
         bin.install "filetug"
@@ -19,8 +19,8 @@ class Filetug < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/datatug/filetug/releases/download/v0.0.18/filetug_0.0.18_darwin_arm64.tar.gz"
-      sha256 "766800d097f6318f8c3c913b63b6395f7690d1c83735d6c9cd800c4ae64c7eb8"
+      url "https://github.com/datatug/filetug/releases/download/v0.0.21/filetug_0.0.21_darwin_arm64.tar.gz"
+      sha256 "d743b0c893386f78bb9a60a9cefb2490587c700aaa85089bb4ebb25a13e43fad"
 
       def install
         bin.install "filetug"
@@ -31,16 +31,16 @@ class Filetug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datatug/filetug/releases/download/v0.0.18/filetug_0.0.18_linux_amd64.tar.gz"
-      sha256 "6a3990f5e6dddd8eed8f20c807b5912232c9ca361a16c7f9e2e784eb4aa10c13"
+      url "https://github.com/datatug/filetug/releases/download/v0.0.21/filetug_0.0.21_linux_amd64.tar.gz"
+      sha256 "8adc55448d63abd458b2d90d8af946699e50eaa9e01eccf3103c6dc1e6e96055"
       def install
         bin.install "filetug"
         bin.install_symlink "filetug" => "ft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/datatug/filetug/releases/download/v0.0.18/filetug_0.0.18_linux_arm64.tar.gz"
-      sha256 "59352647ed0baf1651f27116c06586a72705f62168052ba23c69edca39aa3258"
+      url "https://github.com/datatug/filetug/releases/download/v0.0.21/filetug_0.0.21_linux_arm64.tar.gz"
+      sha256 "4ad3dce862a19cbaddbc949a49f4b3b97dd21d6d7ce9d082be4a18ba4d28e3ed"
       def install
         bin.install "filetug"
         bin.install_symlink "filetug" => "ft"
